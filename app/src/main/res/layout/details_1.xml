@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15sp"
+        android:src="@drawable/jcbust"
+        android:id="@+id/ymca"
+        >
+    </androidx.appcompat.widget.AppCompatImageView>
+    <ScrollView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/ymca"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginBottom="20sp"
+        android:id="@+id/tv2"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_below="@id/ymca"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/ymca_details"
+        >
+    </TextView>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Organizers"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15sp"
+        android:src="@drawable/isft"
+        android:id="@+id/img1"
+        >
+    </androidx.appcompat.widget.AppCompatImageView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginBottom="20sp"
+        android:id="@+id/tv1"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_below="@id/img1"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/isft_details"
+        >
+    </TextView>
+    </ScrollView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"
+        >
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

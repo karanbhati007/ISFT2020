@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.priyanka.ifst">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/isftlogo"
+        android:label="ISFT2020"
+        android:roundIcon="@drawable/isft4"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".committee"></activity>
+        <activity android:name=".developer" />
+        <activity android:name=".spoc" />
+        <activity android:name=".HelpDesk" />
+        <activity android:name=".Event" />
+        <activity android:name=".Gallery" />
+        <activity android:name=".schedule" />
+        <activity android:name=".Organizers" />
+        <activity android:name=".Collaborators" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SpeakersList" />
+    </application>
+
+</manifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp"
+        android:id="@+id/xyz"
+        android:background="@color/bluetheme"
+        android:layout_marginBottom="10dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Click here for complete schedule"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:id="@+id/pdf"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layoutButton"
+
+        android:layout_margin="10dp"
+        >
+ <Button
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+     android:text="7 jan"
+     android:id="@+id/btn1"
+     android:layout_marginRight="0dp"
+     android:layout_marginStart="50dp"
+     android:background="@drawable/roundbutton"
+     android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/buttoncolor"
+            android:text="8 jan" />
+    </LinearLayout>
+<androidx.viewpager.widget.ViewPager
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/eventViewpager"/>
+</LinearLayout>
